@@ -1,0 +1,87 @@
+
+
+
+
+
+/* Tabs */
+ * {
+    box-sizing: border-box
+}
+
+body {
+   font-family: "Lato", sans-serif;
+}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border-right: 1px solid #ccc;
+    background-color: none;
+    width: 30%;
+    height: 300px;
+        }
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: grey;
+    padding: 15px 30px 10px 0px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: right;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 13px;
+}
+
+/* Change font color of buttons on hover */
+.tab button:hover {
+    color: black;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    color: black;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: none;
+    width: 70%;
+    border-left: none;
+    height: 300px;
+}
+
+/* nav header */
+.navLogo {
+    width: auto;
+    height: 33px;
+    margin: 3% 15%;
+}
+
+
+.socialLogos {
+    float: right;
+    margin: 3% 3%;
+}
+
+.instaLogo {
+    width: auto;
+    height: 30px;
+    opacity: 0.7;
+}
+
+.fbLogo {
+    width: auto;
+    height: 21px;
+    margin-bottom: 4px;
+    opacity: 0.7;
+}
+
+img:hover {
+    opacity: 1.0;
+}
