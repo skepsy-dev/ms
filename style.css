@@ -69,11 +69,12 @@
 
  /* Exhibitions Pg */
  .exhibitHeader {
-     display: flex;
      text-align: center;
-     margin-left: 10%;
  }
 
+ .exhibitCopyDiv {
+    margin-top: 7%;
+ }
 
 
 
@@ -93,7 +94,7 @@
      max-width: 250px;
      max-height: 350px;
      text-align: center;
-     margin-left: 3%;
+     margin-left: 5%;
  }
 
  .customNeedleInput {
@@ -112,12 +113,13 @@
 
  .customNeedleImgDiv {
      display: flex;
+     padding-left: 10%;
+     padding-top: 3%;
  }
 
  .customNeedleImgs {
-     width: 400px;
+     width: 300px;
      height: auto;
-
  }
 
 
@@ -165,7 +167,6 @@
  }
 
  .contactFormDiv {
-     margin-left: 10%;
      text-align: center;
  }
 
@@ -174,7 +175,7 @@
      max-width: 250px;
      max-height: 350px;
      text-align: center;
-     margin-left: 15%;
+     margin-left: 18%;
  }
 
  .contactInput {
@@ -188,7 +189,7 @@
  }
 
  .contactButton {
-     margin: 15px 0 15px 0;
+     margin: 15px 15px 15px 0;
      border-radius: 4px;
      border: solid #222222 1px;
      background-color: inherit;
@@ -199,12 +200,11 @@
  .contactPgLinks {
      display: flex;
      justify-content: space-between;
-     margin-left: 10%;
  }
 
  .contactSocials {
-     width: auto;
-     height: 50px;
+     width: 50px;
+     height: auto;
  }
 
  .contactSocials:hover {
@@ -686,9 +686,8 @@
      }
 
      .customNeedleImgs {
-         width: 400px;
+         width: 250px;
          height: auto;
-         padding-right: 15%;
      }
 
      .sponsorsColumn {
@@ -733,15 +732,23 @@
          display: block;
      }
 
+    .customNeedleForm {
+        margin-left: 0%;
+    }
+
      .customNeedleImgDiv {
-         display: block;
+        display: block;
+        padding-left: 7%;
      }
 
      .customNeedleImgs {
-         width: 250px;
+         width: 190px;
          height: auto;
-         padding-right: 15%;
      }
+
+    .contactForm {
+        margin-left: 7%;
+    }
 
      /* IMG Grid */
      .column {
@@ -786,12 +793,22 @@
      .titleSpan {
          font-size: 15px;
      }
+
+    .contactForm {
+        margin-left: 3%;
+    }
  }
 
 
+@media screen and (max-width: 350px) {
+    .customNeedleImgDiv {
+        padding-left: 5%;
+    }
 
-
-
+    .contactForm {
+        margin-left: 0;
+    }
+}
 
 
 
