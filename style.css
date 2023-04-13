@@ -92,7 +92,7 @@
  .customNeedleForm {
      border: 1px solid black;
      max-width: 250px;
-     max-height: 450px;
+     max-height: 600px;
      text-align: center;
      margin-left: 5%;
  }
@@ -667,10 +667,6 @@
  /* Responsive layout - makes a two column-layout instead of five columns */
  @media screen and (max-width: 800px) {
 
-     .needleCustom {
-         display: block;
-     }
-
      .auction2023 {
          display: block;
      }
@@ -694,6 +690,11 @@
      .auctionTab button {
          font-size: 15px;
      }
+
+    /* Custom Needle Order Form */
+    .needleCustom {
+        display: block;
+    }
 
      .customNeedleImgDiv {
          display: block;
@@ -746,6 +747,7 @@
          display: block;
      }
 
+     /* Custom Needle Order Form */
     .customNeedleForm {
         margin-left: 0%;
     }
