@@ -354,28 +354,32 @@
 
                 <fieldset class="customNeedleForm">
                     <legend><span style="font-family: tabFont;">Order Request</span></legend>
-                    <form action="" method="POST" enctype="text/plain">
+                    <form action="customOrder.php" method="POST" enctype="text/plain">
+                        <input class="customNeedleInput" type="text" name="customUserName" required id="customUserName" placeholder="Your Name...">
+                        
+                        <input class="customNeedleInput" type="email" name="customUserEmail" required id="customUserEmail" placeholder="Your Email Address...">
 
-                        <input class="customNeedleInput" type="text" name="customQuote"
-                            placeholder="Quote or Saying...">
+                        <input class="customNeedleInput" type="text" name="customStitchColor" id="customStitchColor" placeholder="Stitching Color(s)...">
 
-                        <input class="customNeedleInput" type="text" name="customStitchColor"
-                            placeholder="Stitching Color...">
+                        <input class="customNeedleInput" type="text" name="customPaintColor" id="customPaintColor" placeholder="Paint Colors...">
+                        
+                        <textarea class="customNeedleInput" type="text" name="customQuote" id="customQuote" rows="3" cols="19" placeholder="Quote or Saying..."></textarea>
 
-                        <input class="customNeedleInput" type="text" name="customPaintColor"
-                            placeholder="Paint Colors...">
+                        <input class="customNeedleInput" type="text" name="customShipName" id="customShipName" placeholder="Ship to Name...">
 
-                        <input class="customNeedleInput" type="text" name="customTo" placeholder="Ship to Name...">
+                        <textarea class="customNeedleInput" name="customAddress" id="customAddress" rows="3" cols="19" placeholder="Shipping Address..."></textarea>
 
-                        <textarea class="customNeedleInput" name="address" rows="3" cols="20"
-                            placeholder="Shipping Address..."></textarea>
+                        <textarea class="customNeedleInput" name="customNotes" id="customNotes" rows="3" cols="19" placeholder="Additonal Notes..."></textarea>
 
-                        <textarea class="customNeedleInput" name="address" rows="3" cols="20"
-                            placeholder="Additonal Notes..."></textarea>
+                        <button class="customNeedleButton" name="customSubmit" id="customSubmit" type="submit" value="Send">Submit</button>
 
-                        <button class="customNeedleButton" name="customNeedleSubmit" type="submit"
-                            value="Send">Submit</button>
-
+                        <?php if (!empty($message)) { ?>
+                        <div class='success'>
+                            <strong>
+                                <?php echo $message; ?>
+                            </strong>
+                        </div>
+                        <?php } ?>
                     </form>
                 </fieldset>
             </div>
@@ -715,17 +719,30 @@
                 </p>
                 <fieldset class="contactForm">
                     <legend><span style="font-family: tabFont;">Contact</span></legend>
-                    <form action="mailto:schepisiwork@gmail.com" method="POST" enctype="text/plain">
-                        <input class="contactInput" type="text" name="name" placeholder="Your Name...">
-                        <input class="contactInput" type="email" name="email" placeholder="Your Email...">
-                        <select class="contactSelect" name="regarding">
+                    <form action="contact.php" method="POST" enctype="text/plain">
+
+                        <input class="contactInput" type="text" name="userName" required id="userName" placeholder="Your Name...">
+                        
+                        <input class="contactInput" type="email" name="userEmail" required id="userEmail" placeholder="Your Email Address...">
+                        
+                        <select class="contactSelect" name="regarding" id="regarding">
                             <option value="" selected hidden>Regarding?</option>
                             <option value="maryArt">Mary's Art</option>
                             <option value="auction">Charity Auction</option>
                         </select>
-                        <textarea class="contactInput" name="address" rows="3" cols="20"
+                        
+                        <textarea class="contactInput" name="userMessage" required id="userMessage" rows="3" cols="20"
                             placeholder="Note to Mary..."></textarea>
+                        
                         <button class="contactButton" type="submit">Submit</button>
+                        
+                        <?php if (!empty($message)) { ?>
+                        <div class='success'>
+                            <strong>
+                                <?php echo $message; ?>
+                            </strong>
+                        </div>
+                        <?php } ?>
                     </form>
                 </fieldset>
             </div>
