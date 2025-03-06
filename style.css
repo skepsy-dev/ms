@@ -40,13 +40,15 @@
  /* Home Pg */
  .aboutContent {
      display: flex;
+     margin-top: 3%;
+     /* margin-left: 1%; */
  }
 
  .aboutImg {
-     width: 200px;
-     height: 90%;
-     padding-top: 27px;
-     padding-left: 3%;
+     max-width: 200px;
+     height: 100%;
+     margin-top: 3%;
+     margin-left: 3%;
  }
 
  .aboutPlink {
@@ -56,18 +58,7 @@
 
 
 
-
-
- /* New Work Pg */
-
-
-
-
-
-
-
-
- /* Exhibitions Pg */
+ /* About Pg */
  .exhibitHeader {
      text-align: center;
  }
@@ -76,86 +67,111 @@
     margin-top: 7%;
  }
 
+ .aboutCopy {
+    margin-top: 5%;
+    /* margin-left: 1%; */
+    max-width: 700px;
+ }
+
+
+
+/* Reference image page */
+.refImagesDiv {
+    margin-top: 10%;
+}
+
 
 
 
  /* Needle Work Pg */
+ .needleWorkContent {
+    margin-top: 5%;
+    /* margin-left: 3%; */
+    max-width: 800px;
+ }
+
  .needleCustom {
-     display: flex;
-     padding-left: 5%;
- }
+    display: flex;
+    padding-left: 5%;
+}
 
- .needleGrid {
-     margin-top: 15px;
- }
+.needleGrid {
+    margin-top: 15px;
+}
 
- .customNeedleForm {
-     border: 1px solid black;
-     max-width: 250px;
-     max-height: 600px;
-     text-align: center;
-     margin-left: 5%;
- }
+.customNeedleForm {
+    border: 1px solid black;
+    max-width: 250px;
+    max-height: 700px;
+    text-align: center;
+    margin-left: 5%;
+}
 
- .customNeedleInput {
-     margin-top: 10px;
-     font-family: "bodyFont";
- }
+.customNeedleInput {
+    margin-top: 10px;
+    font-family: "bodyFont";
+}
 
- .customNeedleButton {
-     margin-top: 15px;
-     border-radius: 4px;
-     border: solid #222222 1px;
-     background-color: inherit;
-     font-family: "bodyFont";
-     cursor: pointer;
- }
+.customNeedleButton {
+    margin-top: 15px;
+    border-radius: 4px;
+    border: solid #222222 1px;
+    background-color: inherit;
+    font-family: "tabFont";
+    cursor: pointer;
+}
 
- .customNeedleImgDiv {
-     display: flex;
-     padding-left: 10%;
-     padding-top: 3%;
- }
+.customNeedleImgDiv {
+    display: flex;
+    padding-left: 10%;
+    padding-top: 3%;
+}
 
- .customNeedleImgs {
-     width: 300px;
-     height: auto;
- }
+.customNeedleImgs {
+    width: 300px;
+    height: auto;
+}
 
 
 
- /* Auciton Pg */
+
+
+
+
+
+
+
+
+ /* Charity Auciton Pg */
  .auctionHeader {
-     text-align: center;
-     align-items: center;
- }
+    text-align: center;
+    align-items: center;
+}
 
- .auctionAbout {
-     padding: 1% 0% 5% 14%;
- }
+.auctionAbout {
+    padding: 1% 0% 5% 14%;
+}
 
- .auctionAbout p {
-     max-width: 500px;
-     min-width: 100px;
- }
+.auctionAbout p {
+    max-width: 500px;
+    min-width: 100px;
+}
 
- .auction2023 {
-     display: flex;
- }
+.auction2023 {
+    display: flex;
+}
 
- .auctionVideo {
-     cursor: pointer;
-     padding-top: 20px;
-     padding-left: 3%;
-     width: 200px;
-     height: auto;
- }
+.auctionVideo {
+    cursor: pointer;
+    padding-top: 20px;
+    padding-left: 3%;
+    width: 200px;
+    height: auto;
+}
 
- .catalogTabContent {
-     margin-top: 5%;
- }
-
-
+.catalogTabContent {
+    margin-top: 5%;
+}
 
 
 
@@ -164,10 +180,12 @@
  .contactContent {
      max-width: 400px;
      text-align: center;
+     margin-top: 5%;
  }
 
  .contactFormDiv {
      text-align: center;
+     /* margin-left: 5%; */
  }
 
  .contactForm {
@@ -193,7 +211,7 @@
      border-radius: 4px;
      border: solid #222222 1px;
      background-color: inherit;
-     font-family: "bodyFont";
+     font-family: "tabFont";
      cursor: pointer;
  }
 
@@ -225,114 +243,20 @@
 
 
 
-/* Footer */
-
-.footer {
-    float: left;
-    bottom: 0;
-    position: fixed;
-    margin: 0 0 1% 3%;
-}
 
 
 
 
-
- /* IMG Grids */
- .row {
-     display: -ms-flexbox;
-     /* IE10 */
-     display: flex;
-     -ms-flex-wrap: wrap;
-     /* IE10 */
-     flex-wrap: wrap;
-     padding: 0 4px;
- }
-
- /* Create five equal columns that sits next to each other */
- .column {
-     -ms-flex: 20%;
-     /* IE10 */
-     flex: 20%;
-     max-width: 20%;
-     padding: 0 4px;
- }
-
- .column img {
-     margin-top: 8px;
-     vertical-align: middle;
-     width: 100%;
-     transition: 0.3s ease-in-out;
-     cursor: pointer;
-     overflow: hidden;
-     border-radius: 5px;
- }
-
- .column img:hover {
-     transform: scale(0.95);
- }
-
-
-
-
-
-
- /* IMG modal */
- .img-bg-modal {
-     background-color: rgba(0, 0, 0, 0.8);
-     width: 100%;
-     height: 300%;
-     position: absolute;
-     top: 0;
-     display: none;
-     justify-content: center;
-     align-items: center;
- }
-
- .img-modal {
-     height: fit-content;
-     width: 100%;
-     background: none;
-     text-align: center;
-     justify-content: center;
-     align-items: center;
-     position: absolute;
-     padding-top: 10%;
-     border-radius: 4px;
-     cursor: default;
- }
-
- .imgModal-close {
-     position: absolute;
-     top: 2%;
-     right: 15%;
-     font-size: 37px;
-     color: white;
-     transform: rotate(45deg);
-     cursor: pointer;
- }
-
-
- .expandedImg {
-     max-height: 500px;
- }
-
-
-
-
-
-
-
-
-
- /* Page Tabs */
+ /* Main Navigation Page Tabs (left side)*/
  /* Style the tab */
  .pageTab {
      float: left;
      border-right: 1px solid #ccc;
      background-color: none;
-     width: 25%;
-     height: 300px;
+     width: 20%;
+     height: 280px;
+     margin-top: 3%;
+     margin-left: 3%;
  }
 
  /* Style the buttons inside the tab */
@@ -386,276 +310,219 @@
 
 
 
-
-
-
-
-
- /* Needlw Work Pg Tabs */
+/* Needlw Work Pg Tabs */
  /* Style the tab */
  .needleTab {
-     overflow: hidden;
-     background-color: none;
-     text-align: center;
-     /* border-bottom: 1px solid #ccc; */
- }
+    overflow: hidden;
+    background-color: none;
+    text-align: center;
+    /* border-bottom: 1px solid #ccc; */
+}
 
- .needleTab:after {
-     content: "";
-     /* This is necessary for the pseudo element to work. */
-     display: block;
-     /* This will put the pseudo element on its own line. */
-     margin: 0 auto;
-     /* This will center the border. */
-     width: 60%;
-     /* Change this to whatever width you want. */
-     /* padding-top: 5px; */
-     /* This creates some space between the element and the border. */
-     border-bottom: 1px solid #ccc;
-     /* This creates the border. Replace black with whatever color you want. */
- }
+.needleTab:after {
+    content: "";
+    /* This is necessary for the pseudo element to work. */
+    display: block;
+    /* This will put the pseudo element on its own line. */
+    margin: 0 auto;
+    /* This will center the border. */
+    width: 60%;
+    /* Change this to whatever width you want. */
+    /* padding-top: 5px; */
+    /* This creates some space between the element and the border. */
+    border-bottom: 1px solid #ccc;
+    /* This creates the border. Replace black with whatever color you want. */
+}
 
- /* Style the buttons inside the tab */
- .needleTab button {
-     background-color: inherit;
-     color: grey;
-     text-align: center;
-     border: none;
-     outline: none;
-     cursor: pointer;
-     padding: 14px 16px;
-     transition: 0.3s;
-     font-size: 17px;
-     font-family: "tabFont";
- }
+/* Style the buttons inside the tab */
+.needleTab button {
+    background-color: inherit;
+    color: grey;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    font-family: "tabFont";
+}
 
- /* Change background color of buttons on hover */
- .needleTab button:hover {
-     color: black;
- }
+/* Change background color of buttons on hover */
+.needleTab button:hover {
+    color: black;
+}
 
- /* Create an active/current tablink class */
- .needleTab button.active {
-     /* border-bottom: 1px solid #ccc; */
-     color: black;
- }
+/* Create an active/current tablink class */
+.needleTab button.active {
+    /* border-bottom: 1px solid #ccc; */
+    color: black;
+}
 
- /* Style the tab content */
- .needleTabContent {
-     /* border-top: none;
-    text-align: left; */
- }
-
-
+/* Style the tab content */
+.needleTabContent {
+    /* border-top: none;
+   text-align: left; */
+}
 
 
 
 
 
 
+/* Navbar Top (header)*/
+.navBar {
+    background-color: inherit;
+}
+
+.navbar-links {
+    float: right;
+    margin-top: 1%;
+    margin-right: 3%;
+}
+
+.navLogo {
+    width: auto;
+    height: 45px;
+    margin-top: 1%;
+    margin-left: 3%;
+}
+
+.instaLogo {
+    width: auto;
+    height: 30px;
+    opacity: 0.6;
+}
+
+.msLogo {
+    width: auto;
+    height: 23px;
+    margin-bottom: 4px;
+    opacity: 0.8;
+}
+
+img:hover {
+    opacity: 1.0;
+}
 
 
 
 
 
- /* Auction pg Tabs */
- /* Style the tab */
- .auctionTab {
-     overflow: hidden;
-     background-color: none;
-     text-align: center;
-     /* border-bottom: 1px solid #ccc; */
- }
+/* Footer */
 
- .auctionTab:after {
-     content: "";
-     /* This is necessary for the pseudo element to work. */
-     display: block;
-     /* This will put the pseudo element on its own line. */
-     margin: 0 auto;
-     /* This will center the border. */
-     width: 60%;
-     /* Change this to whatever width you want. */
-     /* padding-top: 5px; */
-     /* This creates some space between the element and the border. */
-     border-bottom: 1px solid #ccc;
-     /* This creates the border. Replace black with whatever color you want. */
- }
-
- /* Style the buttons inside the tab */
- .auctionTab button {
-     background-color: inherit;
-     color: grey;
-     text-align: center;
-     border: none;
-     outline: none;
-     cursor: pointer;
-     padding: 14px 16px;
-     transition: 0.3s;
-     font-size: 17px;
-     font-family: "tabFont";
- }
-
- /* Change background color of buttons on hover */
- .auctionTab button:hover {
-     color: black;
- }
-
- /* Create an active/current tablink class */
- .auctionTab button.active {
-     /* border-bottom: 1px solid #ccc; */
-     color: black;
- }
-
- /* Style the tab content */
- .auctionTabContent {
-     border-top: none;
-     text-align: left;
- }
-
-
-
-
-
- /* Auction Catalog preview */
- .page {
-     width: 30vw;
-     height: 44vw;
-     background-color: inherit;
-     float: left;
-     margin-bottom: 0.5em;
-     background: left top no-repeat;
-     background-size: cover;
-     image-resolution: from-image 300dpi;
- }
-
- .page:nth-child(even) {
-     /* clear: both; */
- }
-
- .book {
-     /* float: left; */
- }
-
- .book .pages {
-     width: 60vw;
-     height: 42vw;
-     position: relative;
-     transform-style: preserve-3d;
-     backface-visibility: hidden;
-     border-radius: 4px;
-     /*box-shadow: 0 0 0 1px #e3dfd8;*/
- }
-
- .book .page {
-     float: none;
-     clear: none;
-     /* margin: 0; */
-     position: absolute;
-     top: 0;
-     width: 30vw;
-     height: 42vw;
-     transform-origin: 0 0;
-     transition: transform 1.4s;
-     backface-visibility: hidden;
-     transform-style: preserve-3d;
-     cursor: pointer;
-     user-select: none;
-     background-color: inherit;
- }
-
- .book .page:before {
-     content: '';
-     position: absolute;
-     top: 0;
-     bottom: 0;
-     left: 0;
-     right: 0;
-     background: none;
-     transition: background 0.7s;
-     z-index: 2;
- }
-
- .book .page:nth-child(odd) {
-     pointer-events: all;
-     transform: rotateY(0deg);
-     right: 0;
-     border-radius: 0 4px 4px 0;
-     background-image: none;
- }
-
- .book .page:nth-child(odd):hover {
-     transform: rotateY(-15deg);
- }
-
- .book .page:nth-child(even) {
-     pointer-events: none;
-     transform: rotateY(180deg);
-     transform-origin: 100% 0;
-     left: 0;
-     border-radius: 4px 0 0 4px;
-     border-color: none;
-     background-image: none
- }
-
- .book .page.grabbing {
-     transition: none;
- }
-
- .book .page.flipped:nth-child(odd) {
-     pointer-events: none;
-     transform: rotateY(-180deg);
- }
-
- .book .page.flipped:nth-child(even) {
-     pointer-events: all;
-     transform: rotateY(0deg);
- }
-
- .book .page.flipped:nth-child(even):hover {
-     transform: rotateY(15deg);
- }
+/* .footer {
+    float: left;
+    bottom: 0;
+    position: fixed;
+    margin: 0 0 1% 3%;
+} */
 
 
 
 
 
 
- /* Auction Sponsors repsonsive img grid */
- .sponsorsRow {
-     display: -ms-flexbox;
-     /* IE10 */
-     display: flex;
-     -ms-flex-wrap: wrap;
-     /* IE10 */
-     flex-wrap: wrap;
-     padding: 0 4px;
- }
 
- /* Create three equal columns that sits next to each other */
- .sponsorsColumn {
-     -ms-flex: 33%;
-     /* IE10 */
-     flex: 33%;
-     max-width: 33%;
-     padding: 0 4px;
 
- }
 
- .sponsorsColumn img {
-     margin-top: 8px;
-     vertical-align: middle;
-     width: 100%;
-     transition: 0.3s ease-in-out;
-     cursor: pointer;
-     overflow: hidden;
-     border-radius: 5px;
-     padding: 20px 20px;
- }
 
- .sponsorsColumn img:hover {
-     transform: scale(0.95);
- }
+
+
+
+
+
+
+
+ /* IMG Grids */
+ .row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create five equal columns that sits next to each other */
+.column {
+    -ms-flex: 20%;
+    /* IE10 */
+    flex: 20%;
+    /* max-width: 20%; */
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.column img:hover {
+    transform: scale(0.95);
+}
+
+
+
+
+
+
+/* IMG modal */
+.img-bg-modal {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 300%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-modal {
+    height: fit-content;
+    width: 100%;
+    background: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding-top: 10%;
+    border-radius: 4px;
+    cursor: default;
+}
+
+.imgModal-close {
+    position: absolute;
+    top: 2%;
+    right: 15%;
+    font-size: 37px;
+    color: white;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+
+.expandedImg {
+    max-height: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -691,30 +558,20 @@
          font-size: 15px;
      }
 
-    /* Custom Needle Order Form */
-    .needleCustom {
-        display: block;
-    }
-
-     .customNeedleImgDiv {
-         display: block;
-     }
-
-     .customNeedleImgs {
-         width: 250px;
-         height: auto;
-     }
-
-     .sponsorsColumn {
-         -ms-flex: 50%;
-         flex: 50%;
-         max-width: 50%;
+     /* home page logo */
+     .aboutImg {
+        max-width: 200px;
+        margin-top: 6%;
      }
 
      /* IMG Modal */
      .expandedImg {
          max-width: 500px;
      }
+
+    .footer {
+        font-size: 5px;
+    }
  }
 
 
@@ -747,25 +604,6 @@
          display: block;
      }
 
-     /* Custom Needle Order Form */
-    .customNeedleForm {
-        margin-left: 0%;
-    }
-
-     .customNeedleImgDiv {
-        display: block;
-        padding-left: 7%;
-     }
-
-     .customNeedleImgs {
-         width: 190px;
-         height: auto;
-     }
-
-    .contactForm {
-        margin-left: 7%;
-    }
-
      /* IMG Grid */
      .column {
          -ms-flex: 100%;
@@ -773,16 +611,27 @@
          max-width: 100%;
      }
 
-     .sponsorsColumn {
-         -ms-flex: 100%;
-         flex: 100%;
-         max-width: 100%;
-     }
+    /* home page logo */
+    .aboutImg {
+        max-width: 200px;
+        margin-left: 10%;
+    }
 
      /* IMG Modal */
      .expandedImg {
          max-width: 300px;
      }
+
+     .footer {
+        font-size: 5px;
+     }
+
+     .navLogo {
+        width: auto;
+        height: 50px;
+        margin-top: 1%;
+        /* margin-left: 0%; */
+    }
  }
 
 
@@ -810,9 +659,18 @@
          font-size: 15px;
      }
 
-    .contactForm {
-        margin-left: 3%;
-    }
+     /* home page logo */
+     .aboutImg {
+        max-width: 200px;
+        /* padding-bottom: 20%; */
+     }
+
+     .navLogo {
+        width: auto;
+        height: 50px;
+        margin-top: 1%;
+        /* margin-left: 0%; */
+    }   
  }
 
 
@@ -824,6 +682,19 @@
     .contactForm {
         margin-left: 0;
     }
+
+    .navLogo {
+        width: auto;
+        height: 50px;
+        margin-top: 1%;
+        /* margin-left: 0%; */
+    }
+
+    /* home page logo */
+    .aboutImg {
+        max-width: 200px;
+        /* padding-bottom: 20%; */
+     }
 }
 
 
@@ -833,40 +704,4 @@
 
 
 
- /* Navbar */
-
- .navBar {
-     background-color: inherit;
-     /* top: 0;
-     position: fixed; */
- }
-
- .navbar-links {
-     float: right;
-     margin-top: 15px;
-     margin-right: 5%;
- }
-
- .navLogo {
-     width: auto;
-     height: 50px;
-     margin-top: 7px;
-     margin-left: 5%;
- }
-
- .instaLogo {
-     width: auto;
-     height: 30px;
-     opacity: 0.6;
- }
-
- .msLogo {
-     width: auto;
-     height: 23px;
-     margin-bottom: 4px;
-     opacity: 0.8;
- }
-
- img:hover {
-     opacity: 1.0;
- }
+ 

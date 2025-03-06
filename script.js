@@ -1,11 +1,87 @@
 
+// Contact Tab form submit action
+document.getElementById("contactForm").addEventListener("submit", async function(event) {
+  event.preventDefault(); // Prevent default form submission
+
+  const submitButton = this.querySelector("button[type=submit]");
+  submitButton.disabled = true; // Disable button to prevent multiple submissions
+
+   // Show success message immediately
+   document.getElementById("successMessage").style.display = "block";
+   document.getElementById("successMessage").innerText = "Sending..."; // Show loading message
+
+  const formData = new FormData(this);
+
+  try {
+    const response = await fetch("https://formsubmit.co/ajax/641521ac5b291b641408e2b1ff249558", {
+      method: "POST",
+      body: formData
+    });
+
+    if (response.ok) {
+      document.getElementById("successMessage").innerText = "Message sent successfully!";
+      this.reset(); // Clear form fields
+    } else {
+      document.getElementById("successMessage").innerText = "Error sending message. Please try again.";
+    }
+    } catch (error) {
+      document.getElementById("successMessage").innerText = "Network error. Please check your connection.";
+    }
+
+  setTimeout(() => {
+  document.getElementById("successMessage").style.display = "none"; // Hide after 5 seconds
+  }, 5000);
+
+  submitButton.disabled = false; // Re-enable button after submission
+});
+
+// Needle Work Custom Order Contact form submit action
+document.getElementById("customNeedleForm").addEventListener("submit", async function(event) {
+  event.preventDefault(); // Prevent default form submission
+
+  const submitButton = this.querySelector("button[type=submit]");
+  submitButton.disabled = true; // Disable button to prevent multiple submissions
+
+   // Show success message immediately
+   document.getElementById("needleSuccessMessage").style.display = "block";
+   document.getElementById("needleSuccessMessage").innerText = "Sending..."; // Show loading message
+
+  const formData = new FormData(this);
+
+  try {
+    const response = await fetch("https://formsubmit.co/ajax/schepisidev@gmail.com", {
+      method: "POST",
+      body: formData
+    });
+
+    if (response.ok) {
+      document.getElementById("needleSuccessMessage").innerText = "Message sent successfully!";
+      this.reset(); // Clear form fields
+    } else {
+      document.getElementById("needleSuccessMessage").innerText = "Error sending message. Please try again.";
+    }
+    } catch (error) {
+      document.getElementById("needleSuccessMessage").innerText = "Network error. Please check your connection.";
+    }
+
+  setTimeout(() => {
+  document.getElementById("needleSuccessMessage").style.display = "none"; // Hide after 5 seconds
+  }, 5000);
+
+  submitButton.disabled = false; // Re-enable button after submission
+});
+
+
 
 
 // Show the expanded img modal and insert the clicked img.
 function myFunction(imgs) {
         var expandImg = document.getElementById("expandedImg");
-        // var imgText = document.getElementById("imgtext");
+        var modal = document.getElementById("img-bg-modal");
+
         expandImg.src = imgs.src;
+        modal.style.display = "flex"; // Using flex to center in viewport
+
         // imgText.innerHTML = imgs.alt;
         document.getElementById("img-bg-modal").style.display = "block";
     }
@@ -21,6 +97,17 @@ document.addEventListener('keydown', (event) => {
     document.querySelector('.img-bg-modal').style.display = "none";
   }
 })
+
+// Close IMG modal when clicking outside the image
+document.getElementById("img-bg-modal").addEventListener("click", function(event) {
+  var expandImg = document.getElementById("expandedImg");
+  if (!expandImg.contains(event.target)) {
+      document.getElementById("img-bg-modal").style.display = "none";
+  }
+});
+
+
+
 
 
 
@@ -45,89 +132,22 @@ function openPage(evt, pgName) {
 document.getElementById("defaultOpen").click();
 
 
+
 // Needl Work Pg Tabs changing function
-function openNeedle(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("needleTabContent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("needleTabLinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
+function openNeedle(evt, pgName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("needleTabContent");
+  for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("needleTabLinks");
+  for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(pgName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpenNeedle").click();
 
-
-
-
-// Auction Pg Tabs changing function
-function openAuction(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("auctionTabContent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("auctionTabLinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpenAuction").click();
-
-
-
-
-
-// Auction Catalog preview funcitons.
-  var pages = document.getElementsByClassName('page');
-  for(var i = 0; i < pages.length; i++)
-    {
-      var page = pages[i];
-      if (i % 2 === 0)
-        {
-          page.style.zIndex = (pages.length - i);
-        }
-    }
-
-  document.addEventListener('DOMContentLoaded', function(){
-    for(var i = 0; i < pages.length; i++)
-      {
-        //Or var page = pages[i];
-        pages[i].pageNum = i + 1;
-        pages[i].onclick=function()
-          {
-            if (this.pageNum % 2 === 0)
-              {
-                this.classList.remove('flipped');
-                this.previousElementSibling.classList.remove('flipped');
-              }
-            else
-              {
-                this.classList.add('flipped');
-                this.nextElementSibling.classList.add('flipped');
-              }
-           }
-        }
-  })
-
-
-
-
-
-// Contact Pg open email client on button click
-// document.querySelector('.sendEmail').addEventListener("click", function() {
-//     var email = 'maryschepisi@gmail.com';
-//     var subject = 'Website Inquiry';
-//     var emailBody = 'Hello Mary,';
-//     document.location = "mailto:"+email+"?subject="+subject+"&body="+emailBody;
-// });
