@@ -13,7 +13,7 @@ document.getElementById("contactForm").addEventListener("submit", async function
   const formData = new FormData(this);
 
   try {
-    const response = await fetch("https://formsubmit.co/ajax/641521ac5b291b641408e2b1ff249558", {
+    const response = await fetch("https://formsubmit.co/ajax/maryschepisi@gmail.com", {
       method: "POST",
       body: formData
     });
@@ -49,7 +49,7 @@ document.getElementById("customNeedleForm").addEventListener("submit", async fun
   const formData = new FormData(this);
 
   try {
-    const response = await fetch("https://formsubmit.co/ajax/schepisidev@gmail.com", {
+    const response = await fetch("https://formsubmit.co/ajax/maryschepisi@gmail.com", {
       method: "POST",
       body: formData
     });
