@@ -13,7 +13,7 @@ document.getElementById("contactForm").addEventListener("submit", async function
   const formData = new FormData(this);
 
   try {
-    const response = await fetch("https://formsubmit.co/ajax/maryschepisi@gmail.com", {
+    const response = await fetch("https://formsubmit.co/ajax/1293fa7e9a25fe85c2b34e96b2401f9b", {
       method: "POST",
       body: formData
     });
@@ -35,6 +35,9 @@ document.getElementById("contactForm").addEventListener("submit", async function
   submitButton.disabled = false; // Re-enable button after submission
 });
 
+
+
+
 // Needle Work Custom Order Contact form submit action
 document.getElementById("customNeedleForm").addEventListener("submit", async function(event) {
   event.preventDefault(); // Prevent default form submission
@@ -49,7 +52,7 @@ document.getElementById("customNeedleForm").addEventListener("submit", async fun
   const formData = new FormData(this);
 
   try {
-    const response = await fetch("https://formsubmit.co/ajax/maryschepisi@gmail.com", {
+    const response = await fetch("https://formsubmit.co/ajax/1293fa7e9a25fe85c2b34e96b2401f9b", {// Needle Work
       method: "POST",
       body: formData
     });
