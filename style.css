@@ -46,7 +46,8 @@
 
  .aboutImg {
      max-width: 200px;
-     height: 100%;
+     /* max-height: 300px; */
+     /* height: 100%; */
      margin-top: 3%;
      margin-left: 3%;
  }
@@ -464,9 +465,10 @@ img:hover {
 .img-bg-modal {
     background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
-    height: 300%;
+    height: 350%;
     position: absolute;
     top: 0;
+    left: 0;
     display: none;
     justify-content: center;
     align-items: center;
@@ -548,7 +550,7 @@ img:hover {
      /* home page logo */
      .aboutImg {
         max-width: 200px;
-        margin-top: 6%;
+        margin-top: 5%;
      }
 
      /* IMG Modal */
@@ -558,6 +560,16 @@ img:hover {
 
     .footer {
         font-size: 5px;
+    }
+
+    .customNeedleImgDiv {
+        padding-left: 2%;
+        /* padding-top: 3%; */
+    }    
+
+    .customNeedleImgs {
+        width: 250px;
+        height: auto;
     }
  }
 
@@ -574,7 +586,7 @@ img:hover {
          font-size: 18px;
      }
 
-     /* Pg Tabs Font Adjust */
+     Pg Tabs Font Adjust
      .pageTab button {
          font-size: 13px;
      }
@@ -591,20 +603,20 @@ img:hover {
          display: block;
      }
 
-     /* IMG Grid */
+     IMG Grid
      .column {
          -ms-flex: 100%;
          flex: 100%;
          max-width: 100%;
      }
 
-    /* home page logo */
+    home page logo
     .aboutImg {
         max-width: 200px;
         margin-left: 10%;
     }
 
-     /* IMG Modal */
+     IMG Modal
      .expandedImg {
          max-width: 300px;
      }
@@ -617,7 +629,28 @@ img:hover {
         width: auto;
         height: 50px;
         margin-top: 1%;
-        /* margin-left: 0%; */
+        margin-left: 0%;
+    }
+
+    .customNeedleImgDiv {
+        display: inline;
+        max-width: 300px;
+        padding-left: 0%;
+        /* padding-top: 3%; */
+    }   
+
+    .customNeedleImgs {
+        width: 200px;
+        height: auto;
+    }
+    
+    .needleCustom {
+        display: inline;
+        /* padding-left: 5%; */
+    }
+
+    .expandedImg {
+        max-width: 300px;
     }
  }
 
@@ -658,6 +691,14 @@ img:hover {
         margin-top: 1%;
         /* margin-left: 0%; */
     }   
+
+    .contactForm {
+        margin-left: 1%;
+    }
+
+    .expandedImg {
+        max-width: 250px;
+    }
  }
 
 
