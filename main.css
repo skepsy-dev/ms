@@ -337,7 +337,7 @@
     /* This will put the pseudo element on its own line. */
     margin: 0 auto;
     /* This will center the border. */
-    width: 60%;
+    width: 30%;
     /* Change this to whatever width you want. */
     /* padding-top: 5px; */
     /* This creates some space between the element and the border. */
@@ -353,10 +353,11 @@
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 5px 16px;
+    margin-top: 3%;
     transition: 0.3s;
-    font-size: 17px;
+    font-size: 25px;
     font-family: "tabFont";
+    margin-left: 2%;
 }
 
 /* Change background color of buttons on hover */
