@@ -133,6 +133,7 @@ document.getElementById("defaultOpen").click();
 
 
 
+
 // Needl Work Pg Tabs changing function
 function openNeedle(evt, pgName) {
   var i, tabcontent, tablinks;
@@ -151,3 +152,23 @@ function openNeedle(evt, pgName) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpenNeedle").click();
 
+
+
+
+// Excibition Pg Tabs changing function
+function openExhibition(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("exhibitionTabContent");
+  for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("exhibitionTabLinks");
+  for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpenExhibition").click();
