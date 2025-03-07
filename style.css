@@ -161,6 +161,41 @@
     margin-top: 5%;
 }
 
+/* Charity Auction Ticker Container */
+.ticker-container {
+    width: 100%;
+    overflow: hidden;
+    background: inherit; /* Light background */
+    padding: 10px 0;
+    white-space: nowrap;
+    position: relative;
+    max-width: 500px;
+    margin-left: 13%;
+}
+
+/* Logo Wrapper */
+.ticker-wrapper {
+    display: flex;
+    animation: ticker-scroll 15s linear infinite;
+    gap: 40px; /* Space between logos */
+}
+
+/* Individual Logo */
+.ticker-wrapper img {
+    height: 50px; /* Adjust logo size */
+    width: auto;
+    display: inline-block;
+}
+
+/* Keyframes for Infinite Scrolling */
+@keyframes ticker-scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
 
 
 
@@ -571,6 +606,11 @@ img:hover {
         width: 250px;
         height: auto;
     }
+
+    .ticker-container {
+        max-width: 380px;
+        /* margin-left: 13%; */
+    }
  }
 
 
@@ -652,6 +692,11 @@ img:hover {
     .expandedImg {
         max-width: 300px;
     }
+
+    .ticker-container {
+        max-width: 200px;
+        /* margin-left: 13%; */
+    }
  }
 
 
@@ -699,6 +744,11 @@ img:hover {
     .expandedImg {
         max-width: 250px;
     }
+
+    .ticker-container {
+        max-width: 180px;
+        /* margin-left: 13%; */
+    }
  }
 
 
@@ -723,6 +773,11 @@ img:hover {
         max-width: 200px;
         /* padding-bottom: 20%; */
      }
+
+     .ticker-container {
+        max-width: 160px;
+        /* margin-left: 13%; */
+    }
 }
 
 
