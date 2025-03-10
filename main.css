@@ -69,6 +69,10 @@
  }
 
 
+ /* Sample Work Tab*/
+.sampleCopy {
+    margin-top: 5%;
+}
 
 
  /* Needle Work Pg */
@@ -134,31 +138,18 @@
  .auctionHeader {
     text-align: center;
     align-items: center;
+    margin-top: 5%;
+    max-width: 500px;
+    /* margin-left: 3%; */
 }
 
 .auctionAbout {
-    padding: 1% 0% 5% 14%;
+    /* margin-left: 3%; */
 }
 
 .auctionAbout p {
     max-width: 500px;
-    min-width: 100px;
-}
-
-.auction2023 {
-    display: flex;
-}
-
-.auctionVideo {
-    cursor: pointer;
-    padding-top: 20px;
-    padding-left: 3%;
-    width: 200px;
-    height: auto;
-}
-
-.catalogTabContent {
-    margin-top: 5%;
+    /* min-width: 100px; */
 }
 
 /* Charity Auction Ticker Container */
@@ -169,8 +160,8 @@
     padding: 10px 0;
     white-space: nowrap;
     position: relative;
-    max-width: 500px;
-    margin-left: 13%;
+    max-width: 480px;
+    margin-left: 3%;
 }
 
 /* Logo Wrapper */
@@ -688,7 +679,7 @@ img:hover {
     }
 
     .ticker-container {
-        max-width: 200px;
+        max-width: 250px;
         /* margin-left: 13%; */
     }
 
