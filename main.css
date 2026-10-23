@@ -143,6 +143,14 @@
     /* margin-left: 3%; */
 }
 
+.directionsAuctionHeaderLogo {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    margin: 0 auto;
+}
+
 .auctionAbout {
     /* margin-left: 3%; */
 }
